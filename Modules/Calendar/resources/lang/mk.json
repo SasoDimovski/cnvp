@@ -1,0 +1,36 @@
+{
+    "GLOBAL": "//////////////////////////////////////////",
+    "calendar.id_country" :"Земја",
+    "calendar.year" :"Година",
+    "calendar.day" :"Ден",
+    "calendar.date" :"Датум",
+    "calendar.holiday" :"Неработен",
+    "calendar.lock" :"Lock",
+    "calendar.locked_year" :"Locked YEAR",
+
+    "calendar.entered_year" :"Годината :year е веќе внесена.",
+    "calendar.error_enter_year" :"Неуспешен внес на :year година.",
+    "calendar.success_enter_year" :"Успешен внес на :year година.",
+
+
+    "calendar.enter_year" :"Внес на нова работна година",
+    "calendar.enter_year_short" :"Нова работна година",
+    "calendar.last_year" :"Последна внесена работна година:",
+    "calendar.next_year" :"Следна работна година:",
+    "calendar.year_warning" :"Дали сте сигурни за внес на нова работна година?",
+    "calendar.select_all_warning" :"<strong>НАПОМЕНА:</strong> Годината е заклучена само ако сите нејзини денови се заклучени",
+
+    "calendar.delete_year_warning" :"Дали сте сигурни за бришење на работната <strong>:year</strong> година?",
+    "calendar.delete_year_hint" :"Бришење на работната <strong>:year</strong> година",
+    "calendar.delete_year_warning_des" :"<strong>НАПОМЕНА:</strong> Избраната <strong>:year</strong> година, ќе може да ја избришете само доколку нема внесено записи во табелата 'records'",
+    "calendar.delete_success" :"Успешно ја избришавте работната <strong>:year</strong> година",
+    "calendar.delete_error" :"Неуспешно ја избришавте работната <strong>:year</strong> година",
+    "calendar.error_year_not_found" :"Годината <strong>:year</strong> што сакате да ја избришете не е пронајдена во системот",
+    "calendar.error_year_is_used" :"Годината <strong>:year</strong> не смее да се избрише, бидејќи се користи во табелата 'records' ",
+    "calendar.error_year_delete" :"Грешка при бришење на <strong>:year</strong> година",
+    "calendar.select_all" :"Селектирајте ги сите денови од <strong>:year</strong> година, и заклучете ја годината со кликање на копчето 'Зачувај'",
+    "calendar.unselect_all" :"Годината <strong>:year</strong> е заклучена, ако сакате да отклучите отселектирајте ги сите денoви и кликнете на копчето 'Зачувај'",
+
+    "calendar.error_enter_holidays" :"Неуспешен внес на празници",
+    "calendar.success_enter_holidays" :"Успешен внес на празници"
+}

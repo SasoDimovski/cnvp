@@ -1,0 +1,28 @@
+{
+
+    "GLOBAL": "//////////////////////////////////////////",
+    "countries.id" :"ID",
+    "countries.name" :"Име на земја",
+    "countries.code_s" :"Кратко име со две букви",
+    "countries.code_l" :"Кратко име со три букви",
+
+    "countries.created_at" :"Внесено на",
+    "countries.updated_at" :"Променето на",
+
+    "countries.countries" :"Земји",
+    "countries.records" :"Записи",
+    "countries.users" :"Корисници",
+
+    "VIEW": "//////////////////////////////////////////",
+
+    "CONTROLLER": "//////////////////////////////////////////",
+
+    "SERVICES": "//////////////////////////////////////////",
+    "countries.CountriesServices.no_existing_user": "Непостоечки корисник",
+    "countries.CountriesServices.error_delete_country": "Не може да ја избришете земјата бидеќе е внесена во табелата 'records'",
+    "countries.CountriesServices.delete_no_attached_users": "Не можете да ја избришете земјата бидејќи е поврзана со корисниците.",
+    "countries.CountriesServices.deleted_error": "Бришењето не успеа.",
+    "countries.CountriesServices.deleted": "Земјата е успешно избришана.",
+
+    "REQUEST": "//////////////////////////////////////////"
+}

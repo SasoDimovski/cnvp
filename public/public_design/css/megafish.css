@@ -1,0 +1,258 @@
+/*!
+ * Css Superfish mega menu
+ * http://users.tpg.com.au/j_birch/plugins/superfish/options/
+ */
+/*** ESSENTIAL STYLES ***/
+.sf-menu {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sf-menu .sf-mega {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+.sf-menu > li {
+  float: left;
+
+}
+.sf-menu li:hover > .sf-mega,
+.sf-menu li.sfHover > .sf-mega {
+  display: block;
+}
+
+.sf-menu > li > a {
+  display: block;
+  position: relative;
+}
+
+
+/*** DEMO SKIN ***/
+.sf-menu {
+  float: left;
+ /* margin-bottom: 1em;*/
+  width: 100%;
+  border-top: #000 solid 1px;
+  border-bottom: #000 solid 1px;
+}
+.sf-menu .sf-mega {
+  box-shadow: 2px 3px 6px rgba(0,0,0,.2);
+  width: 100%; /* allow long menu items to determine submenu width */
+}
+.sf-menu > li > a {
+  /*border-left: 1px solid #fff;*/
+  /*border-top: 1px solid #dFeEFF*/ /* fallback colour must use full shorthand */
+  /*border-top: 1px solid rgba(255,255,255,.5);*/
+  text-decoration: none;
+  zoom: 1; /* IE7 */
+  /*color: #13a;*/
+  color: #1a1a1a;
+  font-weight: 900;
+  font-size: 20px;
+  padding: 2px 10px;
+}
+.sf-menu > li > a:hover {
+  color: #23c503;
+}
+.sf-menu > li {
+  text-transform: uppercase;
+  padding: .65em 3px;
+  -webkit-transition: background .2s;
+  transition: background .2s;
+}
+.sf-menu > li > li {
+  text-transform: unset;
+}
+.sf-menu > li.active {
+  padding: .65em 0 0em 0;
+}
+.sf-menu > li.active a {
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+}
+.sf-menu > li.active a:after {
+  right: 20px;
+}
+.sf-menu > li ul {
+  position: absolute;
+  top: 3.6em;
+  left: 0;
+  z-index: 99999;
+  width: 100%;
+  background: #000;
+  padding: 0px;
+}
+.sf-menu > li ul ul {
+  width: 1200px;
+  top: 90px;
+}
+.sf-menu > li ul ul ul {
+  top: 60px;
+}
+.sf-menu > li ul li {
+  float: left;
+  position: relative;
+  padding: 23px 15px 23px;
+  font-size: 20px;
+}
+.sf-menu > li ul li li {
+  padding: 12px 15px 12px;
+}
+.sf-menu > li ul li li:after {
+  top: 15px;
+}
+.sf-arrows > li ul li .sf-with-ul:after {
+  top: 40%;
+  right: 30px;
+}
+.sf-arrows > li ul li li .sf-with-ul:after {
+  top: 35%;
+  right: 27px;
+}
+.sf-menu > li ul li.parent:after {
+  display: none;
+}
+.sf-menu > li ul li:after {
+  content: '';
+  border-right: #dff7da solid 1px;
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+  width: 13px;
+  height: 21px;
+  position: absolute;
+  top: 25px;
+  right: 0;
+}
+.sf-menu > li ul li:last-child:after {
+  border-right: none;
+}
+.sf-menu > li ul li a {
+  background: none !important;
+  text-transform: none !important;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.sf-menu > li ul li a:hover {
+  color: #23c503;
+}
+.sf-menu > li li li .sf-with-ul {
+  padding-right: 25px;
+}
+.sf-menu > li:hover,
+.sf-menu > li.sfHover {
+  /*background: #CFDEFF;*/
+  /* only transition out, not in */
+  -webkit-transition: none;
+  transition: none;
+}
+
+/*** mega menu dropdown ***/
+.sf-mega {
+  background-color: #000;
+  /*padding: 1em;*/
+  box-sizing: border-box;
+  width: 100%;
+}
+.sf-menu .sub-menu-top {
+  width: 100%;
+  display: inline-block;
+  border-bottom: #fff solid 1px;
+}
+.sf-menu .sub-menu-top {
+  position: initial;
+}
+.sf-menu .sub-menu-top  li:first-child {
+  padding-left: 30px;
+
+}
+.sf-menu .sub-menu-top  li a {
+  color: #fff;
+}
+.sf-mega-section {
+ /* float: left;*/
+  /*width: 33.33333333%;*/ /* optional */
+  /*padding: 0 2em 1em 2em;*/
+  /*margin-right: 1em;*/
+  /*border-right: 1px solid #b4c8f5;*/
+}
+.sf-mega-section h2 {
+  font-size: 22px;
+  font-weight: 900;
+}
+.sf-mega-section h2 a {
+  color: #fff;
+}
+.sf-mega-section h2 a:hover {
+  color: #23c503;
+}
+.sf-mega-section p {
+  font-family: 'Noto Serif', serif;
+  text-transform: initial;
+  font-size: 14px;
+  color: #fff;
+  font-size: 500;
+}
+.sub-menu {
+  display: inline-block;
+  width: 100%;
+  padding-top: 60px;
+}
+.sf-mega-section .entry-item {
+  margin-bottom: 30px;
+  width: 100%;
+  display: inline-block;
+}
+.sf-mega-section .entry-thum {
+  float: left;
+  margin-right: 20px;
+}
+.sf-mega-section .entry-content h2 {
+  font-size: 18px;
+  margin-top: 0;
+  text-transform: initial;
+}
+.sf-mega-section .entry-content h2 a {
+  color: #fff;
+}
+
+/*** arrows (for all except IE7) **/
+.sf-arrows .sf-with-ul {
+  padding-right: 30px;
+  /*padding-right: 1em;*/ /* no CSS arrows for IE7 (lack pseudo-elements) */
+}
+/* styling for both css and generated arrows */
+.sf-arrows .sf-with-ul:after {
+   display                 : inline-block;
+   font-family             : FontAwesome;
+   font-style              : normal;
+   font-weight             : normal;
+   font-size               : 20px;
+   line-height             : 1;
+   -webkit-font-smoothing  : antialiased;
+   -moz-osx-font-smoothing : grayscale;
+   transform               : translate(0, 0);
+   text-rendering          : auto;
+  content: '\f107';
+  position: absolute;
+  top: 27%;
+  right: 20px;
+  margin-top: -3px;
+  height: 0;
+  width: 0;
+  /* order of following 3 rules important for fallbacks to work */
+  /*border: 5px solid transparent;
+  border-top-color: #dFeEFF;  edit this to suit design (no rgba in IE8) 
+  border-top-color: rgba(255,255,255,.5);*/
+}
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+  border-top-color: white; /* IE8 fallback colour */
+}

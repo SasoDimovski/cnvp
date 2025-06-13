@@ -1,0 +1,26 @@
+
+  {
+    "GLOBAL": "//////////////////////////////////////////",
+    "activities.id": "ID",
+    "activities.name": "Activity Name",
+    "activities.dateinserted": "Entered on",
+    "activities.insertedby": "Entered by",
+    "activities.dateupdated": "Changed on",
+    "activities.updatedby": "Changed by",
+    "activities.activities": "Activities",
+    "activities.records": "Records",
+    "activities.projects": "Projects",
+    "activities.type": "Non-working",
+    "VIEW": "//////////////////////////////////////////",
+    "CONTROLLER": "//////////////////////////////////////////",
+    "SERVICES": "//////////////////////////////////////////",
+    "activities.ActivitiesServices.no_existing_user": "Non-existent user",
+    "activities.ActivitiesServices.error_delete_activity": "You cannot delete the activity because it is already entered in the 'records' table",
+    "activities.ActivitiesServices.delete_no_exist": "The activity does not exist.",
+    "activities.ActivitiesServices.delete_no_attached_projects": "You cannot delete the activity because it is associated with projects.",
+    "activities.ActivitiesServices.deleted_error": "The deletion failed.",
+    "activities.ActivitiesServices.deleted": "The activity was successfully deleted.",
+    "REQUEST": "//////////////////////////////////////////////////////////",
+    "activities.UsersUpdateRequest.min_string": "The <strong>:attribute</strong> field must contain a minimum of <strong>:min</strong> characters.",
+    "activities.UsersUpdateRequest.same_string": "The <strong>:attribute</strong> field and the <strong>:other</strong> field must have the same value."
+  }

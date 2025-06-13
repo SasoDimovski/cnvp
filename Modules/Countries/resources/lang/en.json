@@ -1,0 +1,28 @@
+{
+
+    "GLOBAL": "//////////////////////////////////////////",
+    "countries.id" :"ID",
+    "countries.name" :"Country name",
+    "countries.code_s" :"Short two-letter Country name",
+    "countries.code_l" :"Short three-letter Country name",
+
+    "countries.created_at" :"Created at",
+    "countries.updated_at" :"Updated at",
+
+    "countries.countries" :"Countries",
+    "countries.records" :"Records",
+    "countries.users" :"Users",
+
+    "VIEW": "//////////////////////////////////////////",
+
+    "CONTROLLER": "//////////////////////////////////////////",
+
+    "SERVICES": "//////////////////////////////////////////",
+    "countries.CountriesServices.no_existing_user": "Non-existent user",
+    "countries.CountriesServices.error_delete_country": "You cannot delete the country because it is already entered in the table 'records'",
+    "countries.CountriesServices.delete_no_attached_users": "You cannot delete the country because it is associated with users.",
+    "countries.CountriesServices.deleted_error": "Deletion failed.",
+    "countries.CountriesServices.deleted": "Earth has been successfully wiped.",
+
+    "REQUEST": "//////////////////////////////////////////"
+}

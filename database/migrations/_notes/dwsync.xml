@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="0001_01_01_000000_create_users_table.php" server="cnvp.medium3.mk" local="133769333295306060" remote="133774471200000000" Dst="1" />
+<file name="0001_01_01_000001_create_cache_table.php" server="cnvp.medium3.mk" local="133764131240000000" remote="133774471200000000" Dst="1" />
+<file name="0001_01_01_000002_create_jobs_table.php" server="cnvp.medium3.mk" local="133764131240000000" remote="133774471200000000" Dst="1" />
+<file name="2024_10_07_192313_create_users_table.php" server="cnvp.medium3.mk" local="133772832660198459" remote="133774471200000000" Dst="1" />
+<file name="2024_10_07_200409_create_passwords_table.php" server="cnvp.medium3.mk" local="133757495579322137" remote="133774471200000000" Dst="1" />
+<file name="2024_10_07_202221_create__expiration_time_table.php" server="cnvp.medium3.mk" local="133757495579192158" remote="133774471200000000" Dst="1" />
+<file name="2024_10_07_205713_create_logs_email_table.php" server="cnvp.medium3.mk" local="133757495579492143" remote="133774471200000000" Dst="1" />
+<file name="2024_10_08_055943_create__email_type_table.php" server="cnvp.medium3.mk" local="133757495579062177" remote="133774471200000000" Dst="1" />
+<file name="2024_10_08_060431_create__countries_table.php" server="cnvp.medium3.mk" local="133757495579452147" remote="133774471200000000" Dst="1" />
+<file name="2024_10_31_094915_create__languages_table.php" server="cnvp.medium3.mk" local="133748420157145123" remote="133774471200000000" Dst="1" />
+<file name="2024_11_02_171624_create_modules_table.php" server="cnvp.medium3.mk" local="133761164818213816" remote="133774471200000000" Dst="1" />
+<file name="2024_11_02_201016_create__modules_type_table.php" server="cnvp.medium3.mk" local="133761432579883107" remote="133774471200000000" Dst="1" />
+<file name="2024_11_02_201252_create__modules_design_table.php" server="cnvp.medium3.mk" local="133761460206350907" remote="133774471200000000" Dst="1" />
+<file name="2024_11_02_204501_create_modules_users_table.php" server="cnvp.medium3.mk" local="133761223970004694" remote="133774471200000000" Dst="1" />
+<file name="2024_11_02_220203_create_groups_table.php" server="cnvp.medium3.mk" local="133750588088024329" remote="133774471200000000" Dst="1" />
+<file name="2024_11_03_081212_create_groups_users_table.php" server="cnvp.medium3.mk" local="133761161185215870" remote="133774471200000000" Dst="1" />
+<file name="2024_11_03_083722_create_groups_modules_table.php" server="cnvp.medium3.mk" local="133761164817812116" remote="133774471200000000" Dst="1" />
+<file name="2024_11_10_214549_create__documents_table.php" server="cnvp.medium3.mk" local="133773589879753217" remote="133774471200000000" Dst="1" />
+<file name="0001_01_01_000000_create_users_table.php" server="hp.cnvp-eu.org" local="133769333295306060" remote="133774540800000000" Dst="1" />
+<file name="0001_01_01_000001_create_cache_table.php" server="hp.cnvp-eu.org" local="133764131240000000" remote="133774540800000000" Dst="1" />
+<file name="0001_01_01_000002_create_jobs_table.php" server="hp.cnvp-eu.org" local="133764131240000000" remote="133774540800000000" Dst="1" />
+<file name="2024_10_07_192313_create_users_table.php" server="hp.cnvp-eu.org" local="133772832660198459" remote="133774540800000000" Dst="1" />
+<file name="2024_10_07_200409_create_passwords_table.php" server="hp.cnvp-eu.org" local="133757495579322137" remote="133774540800000000" Dst="1" />
+<file name="2024_10_07_202221_create__expiration_time_table.php" server="hp.cnvp-eu.org" local="133757495579192158" remote="133774540800000000" Dst="1" />
+<file name="2024_10_07_205713_create_logs_email_table.php" server="hp.cnvp-eu.org" local="133757495579492143" remote="133774540800000000" Dst="1" />
+<file name="2024_10_08_055943_create__email_type_table.php" server="hp.cnvp-eu.org" local="133757495579062177" remote="133774540800000000" Dst="1" />
+<file name="2024_10_08_060431_create__countries_table.php" server="hp.cnvp-eu.org" local="133757495579452147" remote="133774540800000000" Dst="1" />
+<file name="2024_10_31_094915_create__languages_table.php" server="hp.cnvp-eu.org" local="133748420157145123" remote="133774540800000000" Dst="1" />
+<file name="2024_11_02_171624_create_modules_table.php" server="hp.cnvp-eu.org" local="133761164818213816" remote="133774540800000000" Dst="1" />
+<file name="2024_11_02_201016_create__modules_type_table.php" server="hp.cnvp-eu.org" local="133761432579883107" remote="133774540800000000" Dst="1" />
+<file name="2024_11_02_201252_create__modules_design_table.php" server="hp.cnvp-eu.org" local="133761460206350907" remote="133774540800000000" Dst="1" />
+<file name="2024_11_02_204501_create_modules_users_table.php" server="hp.cnvp-eu.org" local="133761223970004694" remote="133774540800000000" Dst="1" />
+<file name="2024_11_02_220203_create_groups_table.php" server="hp.cnvp-eu.org" local="133750588088024329" remote="133774540800000000" Dst="1" />
+<file name="2024_11_03_081212_create_groups_users_table.php" server="hp.cnvp-eu.org" local="133761161185215870" remote="133774540800000000" Dst="1" />
+<file name="2024_11_03_083722_create_groups_modules_table.php" server="hp.cnvp-eu.org" local="133761164817812116" remote="133774540800000000" Dst="1" />
+<file name="2024_11_10_214549_create__documents_table.php" server="hp.cnvp-eu.org" local="133773589879753217" remote="133774540800000000" Dst="1" />
+</dwsync>

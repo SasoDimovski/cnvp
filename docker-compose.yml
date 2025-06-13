@@ -1,0 +1,165 @@
+networks:
+    internal:
+        name: ${APP_NAME}
+        external: false
+    traefik:
+        external: true
+
+volumes:
+    mysql:
+    postgresql:
+
+services:
+
+    php:
+      build:
+          context: .
+#          target: dev
+          dockerfile: .docker/php/Dockerfile
+      image: ${APP_NAME}_php:8.3-fpm
+      container_name: ${APP_NAME}_php
+      volumes:
+        - .:/var/www/:z
+        - /etc/passwd:/etc/passwd:ro
+        - /etc/group:/etc/group:ro
+      environment:
+        OPCACHE_ENABLED: 0
+      working_dir: /var/www
+      depends_on:
+        - mysql
+        - postgresql
+      networks:
+        - internal
+        - traefik
+      restart: always
+
+
+    nginx:
+      build:
+        context: ./
+        dockerfile: ./.docker/nginx/Dockerfile
+      image: ${APP_NAME}_nginx:1.27-alpine
+      container_name: ${APP_NAME}_nginx
+      volumes:
+        - .:/var/www/
+        - ./.docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.${APP_NAME}_nginx.rule=Host(`${APP_NAME}`)"
+        - "traefik.http.routers.${APP_NAME}_nginx.entrypoints=web"
+        - "traefik.docker.network=traefik"
+      depends_on:
+        - php
+      networks:
+        - internal
+        - traefik
+      restart: always
+
+
+    phpmyadmin:
+        image: phpmyadmin:5.2.1-apache
+        container_name: ${APP_NAME}_phpmyadmin
+        labels:
+          - "traefik.enable=true"
+          - "traefik.http.routers.${APP_NAME}_phpmyadmin.rule=Host(`${APP_NAME}.phpmyadmin`)"
+          - "traefik.http.routers.${APP_NAME}_phpmyadmin.entrypoints=web"
+          - "traefik.docker.network=traefik"
+        environment:
+          PMA_HOST: mysql                    # The hostname of the MySQL container
+          PMA_PORT: 3306                     # The port of the MySQL container
+          PMA_USER: root                     # Optional: default username for phpMyAdmin auth
+          PMA_PASSWORD: root      # Optional: default password for phpMyAdmin auth
+          UPLOAD_LIMIT: 300M      #Optional: set maximum file upload size in phpmyadmin
+        depends_on:
+            - mysql
+        networks:
+          - internal
+          - traefik
+        links:
+            - mysql
+        restart: always
+
+
+    mysql:
+        image: mysql:9.0.1
+        container_name: ${APP_NAME}_mysql
+        environment:
+          MYSQL_ROOT_PASSWORD: root  # Set the root password for MySQL, MYSQL_ROOT_USER=root by default
+          #MYSQL_USER: test                 # Optional: create a non-root user
+          #MYSQL_PASSWORD: test     # Optional: set the password for the non-root
+          MYSQL_DATABASE: ${APP_NAME}         # Optional: create a default database
+        volumes:
+            - mysql:/var/lib/mysql
+        networks:
+            - internal
+        restart: always
+
+
+    pgadmin:
+      image: dpage/pgadmin4:latest
+      container_name: ${APP_NAME}_pgadmin
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.${APP_NAME}_pgadmin.rule=Host(`${APP_NAME}.pgadmin`)"
+        - "traefik.http.routers.${APP_NAME}_pgadmin.entrypoints=web"
+        - "traefik.docker.network=traefik"
+      environment:
+        PGADMIN_DEFAULT_EMAIL: admin@admin.mk
+        PGADMIN_DEFAULT_PASSWORD: test
+      depends_on:
+        - postgresql
+      networks:
+        - internal
+        - traefik
+
+    postgresql:
+      image: postgres:15
+      container_name: ${APP_NAME}_postgresql
+      volumes:
+          -  postgresql:/var/lib/postgresql/data
+      environment:
+        POSTGRES_DB: postgres
+        POSTGRES_USER: "root"
+        POSTGRES_PASSWORD: "test"
+      networks:
+        - internal
+
+
+    redis:
+      image: redis:latest
+      container_name: ${APP_NAME}_redis
+      networks:
+        - internal
+
+    chromium:
+      image: zenika/alpine-chrome:100
+      container_name: ${APP_NAME}_chromium
+      command: [ chromium-browser, "--headless", "--disable-gpu", "--remote-debugging-address=0.0.0.0", "--remote-debugging-port=9222" ]
+      cap_add:
+        - SYS_ADMIN
+      network_mode: "service:php"
+
+    mailcatcher:
+        image: dockage/mailcatcher:0.9.0
+        container_name: ${APP_NAME}_mailcatcher
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.${APP_NAME}_mailcatcher.rule=Host(`${APP_NAME}_mailcatcher`)"
+            - "traefik.http.routers.${APP_NAME}_mailcatcher.entrypoints=web"
+            - "traefik.docker.network=traefik"
+        ports:
+            - "1080:1080"
+            - "1025:1025"
+        networks:
+            - internal
+    node:
+        image: node:20.17.0-alpine
+        container_name: ${APP_NAME}_node
+        working_dir: /var/www
+        volumes:
+            - .:/var/www
+        tty: true
+        stdin_open: true
+        entrypoint: ["sh", "-c", "npm install && npm run dev"]
+        networks:
+            - internal

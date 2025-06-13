@@ -1,0 +1,15 @@
+{
+    "Modules": true,
+    "Users": true,
+    "Auth": true,
+    "Groups": true,
+    "Main": true,
+    "Languages": true,
+    "User": true,
+    "Activities": true,
+    "Projects": true,
+    "Calendar": true,
+    "Reports": true,
+    "Countries": true,
+    "Assignments": true
+}

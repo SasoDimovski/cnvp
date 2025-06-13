@@ -1,0 +1,53 @@
+{
+
+    "GLOBAL": "//////////////////////////////////////////",
+    "projects.id" :"ID",
+    "projects.name" :"Title",
+    "projects.code" :"Code",
+    "projects.start_date" :"Start",
+    "projects.end_date" :"End",
+    "projects.description" :"Description",
+    "projects.dateinserted" :"Created at",
+    "projects.insertedby" :"Created by",
+    "projects.dateupdated" :"Updated at",
+    "projects.updatedby" :"Updated by",
+    "projects.active" :"Active",
+    "projects.activities" :"Activities",
+    "projects.assignments" :"Assignments",
+    "projects.assignment" :"Assignment",
+    "projects.assignments_new" :"Create assignment",
+    "projects.assignments_title" :"Assignment title",
+    "projects.records" :"Records",
+    "projects.type" :"Non-working",
+    "projects.records_assign" :"Number of records in which the assignment is assotiated",
+
+
+    "VIEW": "//////////////////////////////////////////",
+
+    "projects.edit.send_email_title": "Would you like to send an email??",
+    "projects.edit.send_email_description": "The user will receive an email containing a link to enter a new password.<br> At the same time, the existing password will be reset with a randomly generated password. ",
+    "projects.edit.send_email_hint" : "Send email for registration or password reset",
+    "projects.edit.send_email_success" : "Registration or password reset email has been successfully sent.",
+    "projects.edit.send_email_error" : "Failed to send email for registration or password reset",
+    "projects.edit.image.title_res" : "Mandatory restrictions",
+    "projects.edit.image.size" : "The allowed image upload size is <strong>:size</strong> MB.",
+    "projects.edit.image.type" : "Only the following file formats are allowed: <br> <strong>jpg, jpeg, gif</strong> и <strong>png</strong>",
+    "projects.edit.image.attach" : "Upload a picture",
+    "projects.edit.image.detach" : "Delete picture",
+    "projects.edit.image.delete_warning" : "<strong>The picture will be deleted when you click the Save button.</strong>",
+    "projects.edit.image.save_warning" : "<strong>The picture will be saved when you click the Save button.</strong>",
+
+
+
+    "CONTROLLER": "//////////////////////////////////////////",
+
+    "SERVICES": "//////////////////////////////////////////",
+    "projects.ProjectServices.no_existing_user": "Non-existent user",
+    "projects.ProjectServices.error_delete_assignments": "You cannot delete the assignment because it has already been entered into the table. 'records'",
+    "projects.ProjectServices.success_with_warnings_update_activity": "Activities used in the records table cannot be deleted.",
+
+
+    "REQUEST": "//////////////////////////////////////////",
+    "projects.UsersUpdateRequest.min_string"  : "The <strong>:attribute</strong> field must contain a minimum of <strong>:min</strong> characters.",
+    "projects.UsersUpdateRequest.same_string" : "The <strong>:attribute</strong> field and the <strong>:other</strong> field must have the same value."
+}

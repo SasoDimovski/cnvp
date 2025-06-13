@@ -1,0 +1,33 @@
+{
+
+    "GLOBAL": "//////////////////////////////////////////",
+    "activities.id" :"ID",
+    "activities.name" :"Име на активност",
+    "activities.dateinserted" :"Внесено на",
+    "activities.insertedby" :"Внесено од",
+    "activities.dateupdated" :"Променето на",
+    "activities.updatedby" :"Променето од",
+    "activities.activities" :"Активности",
+    "activities.records" :"Записи",
+    "activities.projects" :"Проекти",
+    "activities.type": "Non-working",
+
+
+    "VIEW": "//////////////////////////////////////////",
+
+
+    "CONTROLLER": "//////////////////////////////////////////",
+
+
+    "SERVICES": "//////////////////////////////////////////",
+    "activities.ActivitiesServices.no_existing_user": "Непостоечки корисник",
+    "activities.ActivitiesServices.error_delete_activity": "Неможе да ја избришете активноста бидеќе е внесена во табелата 'records'",
+    "activities.ActivitiesServices.delete_no_exist": "Активноста не постои.",
+    "activities.ActivitiesServices.delete_no_attached_projects": "Не можете да ја избришете активноста бидејќи е поврзана со проекти.",
+    "activities.ActivitiesServices.deleted_error": "Бришењето не успеа.",
+    "activities.ActivitiesServices.deleted": "Активноста е успешно избришана.",
+
+    "REQUEST": "//////////////////////////////////////////",
+    "activities.UsersUpdateRequest.min_string"  : "Полето <strong>:attribute</strong> мора да содржи минимум <strong>:min</strong> карактери.",
+    "activities.UsersUpdateRequest.same_string" : "Полето <strong>:attribute</strong> и полето <strong>:other</strong> мора да ја имаат истата вредност."
+}

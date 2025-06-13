@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="CountriesSeeder.php" server="cnvp.medium3.mk" local="133758388875795023" remote="133774471200000000" Dst="1" />
+<file name="DatabaseSeeder.php" server="cnvp.medium3.mk" local="133769358344156294" remote="133774471200000000" Dst="1" />
+<file name="DocumentsSeeder.php" server="cnvp.medium3.mk" local="133758388875476906" remote="133774471200000000" Dst="1" />
+<file name="EmailTypeSeeder.php" server="cnvp.medium3.mk" local="133758388875725025" remote="133774471200000000" Dst="1" />
+<file name="ExpirationTimeSeeder.php" server="cnvp.medium3.mk" local="133758388875597948" remote="133774471200000000" Dst="1" />
+<file name="GroupsModulesSeeder.php" server="cnvp.medium3.mk" local="133769376885071535" remote="133774471200000000" Dst="1" />
+<file name="GroupsSeeder.php" server="cnvp.medium3.mk" local="133769339589496117" remote="133774471200000000" Dst="1" />
+<file name="GroupsUsersSeeder.php" server="cnvp.medium3.mk" local="133769377293905112" remote="133774471200000000" Dst="1" />
+<file name="LanguagesSeeder.php" server="cnvp.medium3.mk" local="133758388875556896" remote="133774471200000000" Dst="1" />
+<file name="ModulesDesignSeeder.php" server="cnvp.medium3.mk" local="133771270279246798" remote="133774471200000000" Dst="1" />
+<file name="ModulesSeeder.php" server="cnvp.medium3.mk" local="133769391587702925" remote="133774471200000000" Dst="1" />
+<file name="ModulesTypeSeeder.php" server="cnvp.medium3.mk" local="133769339589446119" remote="133774471200000000" Dst="1" />
+<file name="ModulesUsersSeeder.php" server="cnvp.medium3.mk" local="133769378037025574" remote="133774471200000000" Dst="1" />
+<file name="PasswordsSeeder.php" server="cnvp.medium3.mk" local="133758388875437321" remote="133774471200000000" Dst="1" />
+<file name="SeedGroupsModulesSeeder.php" server="cnvp.medium3.mk" local="133761234787779364" remote="133774471200000000" Dst="1" />
+<file name="SeedGroupsSeeder.php" server="cnvp.medium3.mk" local="133761217331059840" remote="133774471200000000" Dst="1" />
+<file name="SeedGroupsUsersSeeder.php" server="cnvp.medium3.mk" local="133761217858375687" remote="133774471200000000" Dst="1" />
+<file name="SeedModulesDesignSeeder.php" server="cnvp.medium3.mk" local="133758388875267257" remote="133774471200000000" Dst="1" />
+<file name="SeedModulesSeeder.php" server="cnvp.medium3.mk" local="133758388875755022" remote="133774471200000000" Dst="1" />
+<file name="SeedModulesTypeSeeder.php" server="cnvp.medium3.mk" local="133758388875639588" remote="133774471200000000" Dst="1" />
+<file name="SeedModulesUsersSeeder.php" server="cnvp.medium3.mk" local="133761233964335457" remote="133774471200000000" Dst="1" />
+<file name="UsersSeeder.php" server="cnvp.medium3.mk" local="133758388875669234" remote="133774471200000000" Dst="1" />
+<file name="CountriesSeeder.php" server="hp.cnvp-eu.org" local="133758388875795023" remote="133774540800000000" Dst="1" />
+<file name="DatabaseSeeder.php" server="hp.cnvp-eu.org" local="133769358344156294" remote="133774540800000000" Dst="1" />
+<file name="DocumentsSeeder.php" server="hp.cnvp-eu.org" local="133758388875476906" remote="133774540800000000" Dst="1" />
+<file name="EmailTypeSeeder.php" server="hp.cnvp-eu.org" local="133758388875725025" remote="133774540800000000" Dst="1" />
+<file name="ExpirationTimeSeeder.php" server="hp.cnvp-eu.org" local="133758388875597948" remote="133774540800000000" Dst="1" />
+<file name="GroupsModulesSeeder.php" server="hp.cnvp-eu.org" local="133769376885071535" remote="133774540800000000" Dst="1" />
+<file name="GroupsSeeder.php" server="hp.cnvp-eu.org" local="133769339589496117" remote="133774540800000000" Dst="1" />
+<file name="GroupsUsersSeeder.php" server="hp.cnvp-eu.org" local="133769377293905112" remote="133774540800000000" Dst="1" />
+<file name="LanguagesSeeder.php" server="hp.cnvp-eu.org" local="133758388875556896" remote="133774540800000000" Dst="1" />
+<file name="ModulesDesignSeeder.php" server="hp.cnvp-eu.org" local="133771270279246798" remote="133774540800000000" Dst="1" />
+<file name="ModulesSeeder.php" server="hp.cnvp-eu.org" local="133769391587702925" remote="133774540800000000" Dst="1" />
+<file name="ModulesTypeSeeder.php" server="hp.cnvp-eu.org" local="133769339589446119" remote="133774540800000000" Dst="1" />
+<file name="ModulesUsersSeeder.php" server="hp.cnvp-eu.org" local="133769378037025574" remote="133774540800000000" Dst="1" />
+<file name="PasswordsSeeder.php" server="hp.cnvp-eu.org" local="133758388875437321" remote="133774540800000000" Dst="1" />
+<file name="SeedGroupsModulesSeeder.php" server="hp.cnvp-eu.org" local="133761234787779364" remote="133774540800000000" Dst="1" />
+<file name="SeedGroupsSeeder.php" server="hp.cnvp-eu.org" local="133761217331059840" remote="133774540800000000" Dst="1" />
+<file name="SeedGroupsUsersSeeder.php" server="hp.cnvp-eu.org" local="133761217858375687" remote="133774540800000000" Dst="1" />
+<file name="SeedModulesDesignSeeder.php" server="hp.cnvp-eu.org" local="133758388875267257" remote="133774540800000000" Dst="1" />
+<file name="SeedModulesSeeder.php" server="hp.cnvp-eu.org" local="133758388875755022" remote="133774540800000000" Dst="1" />
+<file name="SeedModulesTypeSeeder.php" server="hp.cnvp-eu.org" local="133758388875639588" remote="133774540800000000" Dst="1" />
+<file name="SeedModulesUsersSeeder.php" server="hp.cnvp-eu.org" local="133761233964335457" remote="133774540800000000" Dst="1" />
+<file name="UsersSeeder.php" server="hp.cnvp-eu.org" local="133758388875669234" remote="133774540800000000" Dst="1" />
+</dwsync>

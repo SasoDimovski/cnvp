@@ -1,0 +1,39 @@
+{
+
+    "GLOBAL": "//////////////////////////////////////////",
+    "user.id" :"ID",
+    "user.name" :"Име на корисник",
+    "user.surname" :"Презиме на корисник",
+    "user.username" :"Корисничко име",
+    "user.address" :"Адреса",
+    "user.phone" :"Телефон",
+    "user.photo" :"Слика",
+    "user.email" :"E-mail",
+    "user.id_expiration_time" :"Период",
+    "user.id_expiration_time_des" :"Период на обновување на лозинката",
+    "user.id_country" :"Држава",
+    "user.password" :"Лозинка",
+    "user.password_confirm" :"Потврди лозинка",
+    "user.user_type" :"Тип на корисник",
+    "user.created_at" :"Датум на креирање",
+    "user.updated_at" :"Датум на промени",
+    "user.active" :"Активен",
+    "user.edb" :"ЕДБ",
+
+    "VIEW": "//////////////////////////////////////////",
+
+    "user.edit.image.title_res" : "Задолжителни рестрикции",
+    "user.edit.image.size" : "Дозволена големина за слика при качување е <strong>:size</strong> MB",
+    "user.edit.image.type" : "Дозволени се само следните формати за прирачување: <br> <strong>jpg, jpeg, gif</strong> и <strong>png</strong>",
+    "user.edit.image.attach" : "Прикачи слика",
+    "user.edit.image.detach" : "Откачи слика",
+    "user.edit.image.delete_warning" : "<strong>Сликата ќе биде избришана од системот кога ќе кликнете на копчето „Зачувај“</strong>",
+    "user.edit.image.save_warning" : "<strong>Сликата ќе биде снимена во системот кога ќе кликнете на копчето „Зачувај“</strong>",
+
+    "SERVICES": "//////////////////////////////////////////",
+    "user.UserServices.password_used" : "Лозинката е веќе употребена. Внесете нова",
+
+    "REQUEST": "//////////////////////////////////////////",
+    "user.UsersUpdateRequest.min_string"  : "Полето <strong>:attribute</strong> мора да содржи минимум <strong>:min</strong> карактери.",
+    "user.UsersUpdateRequest.same_string" : "Полето <strong>:attribute</strong> и полето <strong>:other</strong> мора да ја имаат истата вредност."
+}

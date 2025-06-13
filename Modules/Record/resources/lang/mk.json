@@ -1,0 +1,60 @@
+{
+
+    "GLOBAL": "//////////////////////////////////////////",
+    "record.id" :"ID",
+    "record.title" :"Име на фирма",
+    "record.slug" :"URL-slug",
+    "record.subtitle" :"Поднаслов",
+    "record.intro" :"Вовед",
+    "record.text" :"Содржина",
+    "record.picture" :"Слика",
+    "record.created_at" :"Датум на креирање",
+    "record.updated_at" :"Датум на промени",
+    "record.active" :"Активен",
+    "record.main" :"Главен",
+    "record.cover" :"Насловна",
+
+
+    "VIEW": "//////////////////////////////////////////",
+
+    "record.edit.image.title_res" : "Задолжителни рестрикции",
+    "record.edit.image.size" : "Дозволена големина за слика при качување е <strong>:size</strong> MB",
+    "record.edit.image.type" : "Дозволени се само следните формати за прирачување: <br> <strong>jpg, jpeg, gif</strong> и <strong>png</strong>",
+    "record.edit.image.attach" : "Прикачи слика",
+    "record.edit.image.detach" : "Откачи слика",
+    "record.edit.image.delete_warning" : "<strong>Сликата ќе биде избришана од системот кога ќе кликнете на копчето „Зачувај“</strong>",
+    "record.edit.image.save_warning" : "<strong>Сликата ќе биде снимена во системот кога ќе кликнете на копчето „Зачувај“</strong>",
+
+    "record.edit.document": "Податоци за датотеката",
+    "record.edit.document.id": "id",
+    "record.edit.document.name" : "Наслов",
+    "record.edit.document.name_des" : "Наслов на документот",
+    "record.edit.document.file" : "file",
+    "record.edit.document.file_des" : "Име на датотека",
+    "record.edit.document.active" : "Активен",
+    "record.edit.document.size": "Големина на датотека",
+    "record.edit.document.path" : "Патека на датотека",
+    "record.edit.document.type" : "Тип",
+    "record.edit.document.comment" : "Забелешка",
+    "record.edit.document.created_at" : "Датум на креирање",
+    "record.edit.document.updated_at" : "Датум на промени",
+
+    "record.edit.documents.active_status" : "Статус на активност",
+    "record.edit.documents.no_documents" : "Нема прикачени документи",
+    "record.edit.documents.no_documents_no_record" : "За да внесете документи мора да го снимите записот",
+
+    "record.edit.document.title" : "Документи",
+    "record.edit.document.attach" : "Прикачи документи",
+    "record.edit.document.attach_success" : "Документот е успешно прикачен",
+    "record.edit.document.attach_error" : "Неуспешно прикачување на документ",
+    "record.edit.document.to_large" : "Документот не треба да е поголем од 4MB!",
+    "record.edit.document.ext_check_doc" : "Дозволени се само документи со наставка „.pdf“, „.doc“, „.docx“, „.xls“, „.xlsx“, „.txt“, „.ppt“ и „.pptx“!",
+    "record.edit.document.restriction" : "Недозволен тип и големина на датотека",
+
+    "SERVICES": "//////////////////////////////////////////",
+    "record.UserServices.password_used" : "Лозинката е веќе употребена. Внесете нова",
+
+    "REQUEST": "//////////////////////////////////////////",
+    "record.UsersUpdateRequest.min_string"  : "Полето <strong>:attribute</strong> мора да содржи минимум <strong>:min</strong> карактери.",
+    "record.UsersUpdateRequest.same_string" : "Полето <strong>:attribute</strong> и полето <strong>:other</strong> мора да ја имаат истата вредност."
+}

@@ -1,0 +1,31 @@
+{
+
+    "GLOBAL": "//////////////////////////////////////////",
+    "public.id" :"ID",
+    "public.name" :"Име",
+    "public.surname" :"Презиме",
+    "public.username" :"Корисничко име",
+    "public.address" :"Адреса",
+    "public.phone" :"Телефон",
+    "public.photo" :"Слика",
+    "public.email" :"E-mail",
+    "public.id_expiration_time" :"Период",
+    "public.id_expiration_time_des" :"Период на обновување на лозинката",
+    "public.id_country" :"Земја",
+    "public.password" :"Лозинка",
+    "public.password_confirm" :"Потврди лозинка",
+    "public.user_type" :"Тип на корисник",
+    "public.created_at" :"Датум на креирање",
+    "public.updated_at" :"Датум на промени",
+    "public.active" :"Активен",
+    "public.edb" :"ЕДБ",
+
+    "VIEW": "//////////////////////////////////////////",
+    "public.index.success_registration" :"Успешно се регистриравте на платформата. Чекајте одобрување од администраторот. Ви благодариме. ",
+
+    "CONTROLLER": "//////////////////////////////////////////",
+
+
+    "REQUEST": "//////////////////////////////////////////"
+
+}

@@ -1,0 +1,52 @@
+{
+
+    "GLOBAL": "//////////////////////////////////////////",
+    "projects.id" :"ID",
+    "projects.name" :"Наслов",
+    "projects.code" :"Код",
+    "projects.start_date" :"Почеток",
+    "projects.end_date" :"Крај",
+    "projects.description" :"Опис",
+    "projects.dateinserted" :"Внесено на",
+    "projects.insertedby" :"Внесено од",
+    "projects.dateupdated" :"Променето на",
+    "projects.updatedby" :"Променето од",
+    "projects.active" :"Активен",
+    "projects.activities" :"Активности",
+    "projects.assignments" :"Задачи",
+    "projects.assignment" :"Задача",
+    "projects.assignments_new" :"Внесете задача",
+    "projects.assignments_title" :"Наслов на задача",
+    "projects.records" :"Записи",
+    "projects.records_assign" :"Број на записи во кои се наоѓа задачата",
+
+
+    "VIEW": "//////////////////////////////////////////",
+
+    "projects.edit.send_email_title": "Дали сакате да испратите email?",
+    "projects.edit.send_email_description": "На корисникот ќе му пристигне email на кој се наоѓа линк за внесување нова лозинка.<br> Во исто време постоечката лозинка ќе се ресетира со рандом генерирана лозинка. ",
+    "projects.edit.send_email_hint" : "Испрати емаил за регистрација или ресетирање на лозинка",
+    "projects.edit.send_email_success" : "Успешно e испратен email за регистрација или ресетирање на лозинка",
+    "projects.edit.send_email_error" : "Неуспешно испраќање email за регистрација или ресетирање на лозинка",
+    "projects.edit.image.title_res" : "Задолжителни рестрикции",
+    "projects.edit.image.size" : "Дозволена големина за слика при качување е <strong>:size</strong> MB",
+    "projects.edit.image.type" : "Дозволени се само следните формати за прирачување: <br> <strong>jpg, jpeg, gif</strong> и <strong>png</strong>",
+    "projects.edit.image.attach" : "Прикачи слика",
+    "projects.edit.image.detach" : "Откачи слика",
+    "projects.edit.image.delete_warning" : "<strong>Сликата ќе биде избришана од системот кога ќе кликнете на копчето „Зачувај“</strong>",
+    "projects.edit.image.save_warning" : "<strong>Сликата ќе биде снимена во системот кога ќе кликнете на копчето „Зачувај“</strong>",
+
+
+
+    "CONTROLLER": "//////////////////////////////////////////",
+
+    "SERVICES": "//////////////////////////////////////////",
+    "projects.ProjectServices.no_existing_user": "Непостоечки корисник",
+    "projects.ProjectServices.error_delete_assignments": "Неможе да ја избришете задачата бидеќе е внесена во табелата 'records'",
+    "projects.ProjectServices.success_with_warnings_update_activity": "Активностите кои се употребени во табелата „records“ не може да се избришат",
+
+
+    "REQUEST": "//////////////////////////////////////////",
+    "projects.UsersUpdateRequest.min_string"  : "Полето <strong>:attribute</strong> мора да содржи минимум <strong>:min</strong> карактери.",
+    "projects.UsersUpdateRequest.same_string" : "Полето <strong>:attribute</strong> и полето <strong>:other</strong> мора да ја имаат истата вредност."
+}

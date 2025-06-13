@@ -1,0 +1,153 @@
+{
+    "GLOBAL": "//////////////////////////////////////////",
+    "auth.logout_error" : "Неуспешна одјава од апликацијата",
+    "auth.logout_success": "Не сте повеќе најавени во апликацијата",
+    "auth.login_success" : "Успешно најавување во апликацијата.",
+    "auth.login_success_logout_other_devices" : "Сите корисници кои се најавени со истото корисничко име и лозинка, но од други уреди, ќе бидат одјавени од апликацијата.",
+    "auth.error_unknown": "Непозната грешка",
+
+    "CONTROLLER post": "//////////////////////////////////////////",
+    "auth.post.error_hash_not_found" :"Не е пронајден hash кодот во системот",
+    "auth.post.error_no_pass_in_users": "Лозинката не пронајдена во табелата users.",
+    "auth.post.error_no_pass_in_passwords": "Лозинката не пронајдена во табелата passwords.",
+    "auth.post.error_password_used" : "Лозинката што ја внесовте е веќе употребена.<br>Внесете нова!",
+    "auth.post.error_password_no_recorded_in_users": "Грешка при снимање на лозинката во табелата users.<br>Обидете се повторно!",
+    "auth.post.error_password_no_recorded_in_pass": "Грешка при снимање на лозинката во табелата passwords.<br>Обидете се повторно!",
+    "auth.post.error_send_email" :"Грешка при испраќање на email пораката.<br>Обидете се повторно!",
+    "auth.post.error_save_email" :"Грешка при зачувување на email пораката.<br>Обидете се повторно!",
+    "auth.post.error_delete_temp_data" :"Грешка при бришење на темп податоците во база",
+    "auth.post.success_password_changed" : "Лозинката е успешно сменета",
+    "auth.post.success_password_registered" : "Лозинката е успешно сменета",
+
+    "auth.reset.error_no_hash" :"Нема хаш код во линкот",
+    "auth.reset.error_hash_user" :"Не е пронајден корисник во системот сперед hash кодот",
+    "auth.reset.error_hash_date" :"Не постои датум за валидност на хашот",
+    "auth.reset.error_expire_hash" :"Важноста на линкот е истечена",
+    "auth.reset.error_delete_temp_data" :"Грешка при бришење на темп податоците во база",
+    "auth.reset.error_wrong_type_reset" :"Погрешен тип на ресет на лозинка",
+
+    "REQUEST  ": "//////////////////////////////////////////",
+    "auth.request.min.string"  : "Полето <strong>:attribute</strong> мора да содржи минимум <strong>:min</strong> карактери.",
+    "auth.request.same" : "Полето <strong>:attribute</strong> и полето <strong>:other</strong> мора да ја имаат истата вредност.",
+
+
+
+     "VIEW login": "/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////",
+    "auth.login.username": "Корисничко име или email адреса",
+    "auth.login.password": "Лозинка",
+    "auth.login.login": "Најави се",
+    "auth.login.forget": "Заборавена лозинка?",
+    "auth.login.toggle": "Прикажи лозинка",
+
+    "CONTROLLER loginPost(AuthLoginRequest $request)": "//////////////////////////////////////////",
+    "auth.loginPost.throttle" : "Максимален број на обиди за најавување е <strong>:attempts</strong>.<br>Апликација ќе биде заклучена <strong>:minutes</strong> минути",
+    "auth.loginPost.mfa_verification": "МФА верификација",
+    "auth.loginPost.credentials_no": "Акредитациите не се пронајдени.<br>Обидете се повторно!",
+    "auth.loginPost.user_no_longer_active" : "Корисничкиот профил не е активен",
+    "auth.loginPost.password_expired" : "Лозинката е истечена, внесете нова",
+    "auth.loginPost.unable_to_delete_temp_data" : "Грешка при бришење на привремените податоци од база",
+
+
+
+    "VIEW forgotten-email": "///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////",
+    "auth.forgotten.email": "e-mail",
+    "auth.forgotten.email_label": "Внесете го вашиот e-mail",
+    "auth.forgotten.back": "Кон страната за најава во апликацијата",
+
+    "CONTROLLER forgottenEmailPost(AuthForgottenEmailRequest $request)": "//////////////////////////////////////////",
+    "auth.forgottenEmailPost.error_user_mail" :"Корисник со внесената email адреса не е пронајден",
+    "auth.forgottenEmailPost.error_generate_hash" :"Грешка при генерирање на hash кодот.<br>Обидете се повторно!",
+    "auth.forgottenEmailPost.error_save_hash" :"Грешка при запишување на hash кодот.<br>Обидете се повторно!",
+    "auth.forgottenEmailPost.error_send_email" :"Грешка при испраќање на email пораката.<br>Обидете се повторно!",
+    "auth.forgottenEmailPost.error_save_email" :"Грешка при зачувување на email пораката.<br>Обидете се повторно!",
+    "auth.forgottenEmailPost.success_send_email" :"На вашата email адреса е испратен линк за промена на лозинката.",
+
+    "REQUEST AuthForgottenEmailRequest ": "//////////////////////////////////////////",
+    "auth.AuthForgottenEmailRequest.email_valid": "Полето <strong>:attribute</strong> мора да е валидна e-mail адреса",
+    "auth.AuthForgottenEmailRequest.email_no_exist" :"Внесениот <strong>:attribute</strong> не е пронајден во базата на податоци.",
+
+
+
+
+    "VIEW forgotten": "////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////",
+    "auth.forgotten": "Внесете нова лозинка",
+    "auth.forgotten.new_password": "Нова лозинка",
+    "auth.forgotten.confirm_new_password": "Потврди ја новата лозинката",
+    "auth.forgotten.old_password": "Стара лозинка",
+    "auth.forgotten.enter": "Внеси",
+    "auth.forgotten.toggle": "Прикажи лозинка",
+    "auth.forgotten.send": "Испрати",
+
+    "VIEW expired": "////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////",
+    "auth.expired.lending": "Периодот на важење на лозинката е истечен.<br>Внесете нова лозинка",
+    "auth.expired.new_password": "Нова лозинка",
+    "auth.expired.confirm_new_password": "Потврди ја новата лозинката",
+    "auth.expired.old_password": "Стара лозинка",
+    "auth.expired.enter": "Внеси",
+    "auth.expired.toggle": "Прикажи лозинка",
+
+    "VIEW registration": "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////",
+    "auth.registration.password": "Лозинка",
+    "auth.registration.confirm_password": "Потврди ја лозинката",
+    "auth.registration.welcome": "Внесете лозинка и најавете се за прв пат во апликацијата!",
+    "auth.registration.enter": "Внеси",
+    "auth.registration.toggle": "Прикажи лозинка",
+
+
+
+
+    "VIEW mfa-code": "////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////",
+    "auth.mfa-code.verification": "Генерирајте код за верификација.<br> Кодот ќе биде испратен на вашата email адреса. ",
+    "auth.mfa-code.email_for_verification": "Код ќе пристигне на следниот email:",
+    "auth.mfa-code.generate" : "Генерирај",
+
+    "CONTROLLER mfaCode()": "//////////////////////////////////////////",
+    "auth.mfaCode.session_expired": "Сесијата е истечена",
+    "auth.mfaCode.no_hash_in_db" : "Не постои таков хаш во базата со податоци",
+
+    "CONTROLLER mfaCodePost()": "//////////////////////////////////////////",
+    "auth.mfaCodePost.session_expired": "Сесијата е истечена",
+    "auth.mfaCodePost.no_hash_in_db" : "Не постои таков хаш во базата со податоци",
+    "auth.mfaCodePost.error_send_email" :"Грешка при испраќање на email пораката.<br>Обидете се повторно!",
+    "auth.mfaCodePost.generate_code_notification": "Кодот е изгенериран и испратен по email",
+
+
+
+    "VIEW mfa": "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////",
+    "auth.mfa.code_verification_enter": "Внесете го кодот за верификација",
+    "auth.mfa.generate_code_again": "Генерирај код повторно",
+    "auth.mfa.enter": "Внеси",
+
+    "CONTROLLER mfa()": "//////////////////////////////////////////",
+    "auth.mfa.session_expired": "Сесијата е истечена",
+    "auth.mfa.no_hash_in_db" : "Не постои таков хаш во базата со податоци",
+
+    "CONTROLLER mfaPost(AuthMfaRequest $request)": "//////////////////////////////////////////",
+    "auth.mfaPost.session_expired": "Сесијата е истечена",
+    "auth.mfaPost.no_hash_in_db" : "Не постои таков хаш во базата со податоци",
+    "auth.mfaPost.code_verification_missing": "Кодот за верификација не е валиден.",
+    "auth.mfaPost.code_verification_expire": "Кодот за верификација е истечен.<br>Изгенерирајте нов",
+    "auth.mfaPost.date_not_found_in_table": "Не е пронајден датум во табелата со лозинки",
+    "auth.mfaPost.password_expired" : "Лозинката е истечена, внесете нова",
+
+    "REQUEST AuthMfaRequest": "//////////////////////////////////////////",
+    "auth.AuthMfaRequest.code_verification": "Код за верификација",
+
+    "EMAILS": "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////",
+    "auth.AuthForgottenMail.email_subject": "Ресетирање на лозинка",
+    "auth.mail-forgotten.hi": "Здраво",
+    "auth.mail-forgotten.made": "Оваа порака е наменета исклучиво да ви помогне во процесот на промена на Вашата лозинка.",
+    "auth.mail-forgotten.link": "Лозинка може да ја промените на следниот линк:",
+    "auth.mail-forgotten.note": "Лозинка нема да биде променета доколку не кликнете на наведениот линк и не ја регистрирате новата лозинка.",
+    "auth.mail-forgotten.expire": "Важноста на линкот е 24 часа.",
+    "auth.mail-forgotten.regards": "Ви благодариме и поздрав,",
+
+    "auth.AuthSuccessMail.email_subject": "Успешно ресетирана лозинка",
+    "auth.mail-success.hi": "Здраво,",
+    "auth.mail-success.made": "Со оваа порака Ве известуваме дека Вашата лозинка е успешно сменета.",
+    "auth.mail-success.regards": "Ви благодариме и поздрав,",
+
+    "auth.AuthMfaMail.email_subject": "Код за верификација",
+    "auth.mail-mfa.made": "Код за верификација:",
+    "auth.mail-mfa.regards": "Ви благодариме и поздрав,"
+}

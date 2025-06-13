@@ -1,0 +1,170 @@
+.modal-footer {   border-top: 0px; }
+
+body{
+    margin:0;
+    color:#6a6f8c;
+    background: #c8c5c6;
+    font:600 16px/18px 'Arial',sans-serif;
+}
+
+a{color:inherit;text-decoration:none}
+
+.login-wrap{
+    width:100%;
+    margin:auto;
+    max-width:525px;
+    min-height:670px;
+    position:relative;
+    background:url("/auth/images/Login.jpg") no-repeat center;
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+
+.login-html{
+    width:100%;
+    height:100%;
+    position:absolute;
+    padding:50px 70px 50px 70px;
+    background: rgba(128, 128, 128, 0.76);
+}
+.login-html .sign-in,
+.login-form .group .check{
+    display:none;
+}
+.login-form .group .button{
+    text-transform:uppercase;
+}
+
+.login-html .tab{
+    width: 100%;
+    font-size:22px;
+    color: #fff;
+    /*margin-right:15px;*/
+    /*margin-bottom:15px;*/
+    padding-bottom:5px;
+    padding-top:5px;
+    margin:0 0px 20px 0;
+    display:inline-block;
+    text-align: center;
+    border-bottom:1px solid #cccccc;
+    border-top:1px solid #cccccc;
+    text-transform:uppercase;
+}
+
+.login-form{
+    min-height:345px;
+    position:relative;
+    perspective:1000px;
+    transform-style:preserve-3d;
+}
+
+.login-form .group{
+    margin-bottom:0px;
+}
+
+.login-form .group .label,
+
+.login-form .group .input{
+    width:100%;
+    color: #2e2e2e;
+    display:block;
+    text-align:left;
+}
+
+.login-form .group .button{
+    width:100%;
+    color:#fff;
+    display:block;
+    margin-top: 0px;
+}
+
+.login-form .group .input,
+
+.login-form .group .button{
+    border:none;
+    padding:15px 15px;
+    border-radius:25px 25px 25px 25px;
+    background: rgba(255, 255, 255, 0.22);
+    margin-top: 5px;
+}
+
+.login-form .group .label{
+    color: #fff;
+    font-size:14px;
+    margin-top: 5px;
+}
+
+.login-form .group .button{
+    background: #c8660b;
+}
+
+.login-form .group .button:hover{
+    background: #c85817;
+    color:#ccc;
+
+}
+
+.hr-top{
+    height:100px;
+    margin:0px 0px 5px 0;
+    padding-top: 20px;
+    /*background:rgba(255,255,255,.2);*/
+/*    border-bottom:1px solid #cccccc;*/
+    text-align:center;
+}
+.hr-top-label{
+    text-align:center;
+    font-size:18px;
+    color: #f4f976;
+    font-style: normal;
+}
+.hr{
+    height:160px;
+    margin:0px 0px 5px 0;
+    padding-top: 20px;
+    /*background:rgba(255,255,255,.2);*/
+    border-bottom:1px solid #cccccc;
+    text-align:center;
+}
+.line{
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+}
+.foot-lnk{
+    text-align:center;
+    font-size:12px;
+    color: #fff;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+.foot-lnk:hover{
+    color: #ccc;
+}
+a:focus, a:hover {
+    color:#ccc;
+    text-decoration: none;
+}
+
+.footer{
+    font-size:12px;
+    color: #ccc;
+    text-align:right;
+}
+
+.footer_link:hover{
+    color: #fff;
+}
+
+.error_massage{
+    font-size:15px;
+    color: #a80b12;
+    width:100%;!important;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin: 2px;
+}
+.alert, .alert-success, .alert-danger, .error_massage {
+    font-weight: normal !important; /* овој стил ќе го убие болдирањето */
+}
