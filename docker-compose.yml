@@ -2,7 +2,7 @@ networks:
     internal:
         name: ${APP_NAME}
         external: false
-    traefik:
+    traefik-net:
         external: true
 
 volumes:
@@ -30,7 +30,7 @@ services:
         - postgresql
       networks:
         - internal
-        - traefik
+        - traefik-net
       restart: always
 
 
@@ -47,12 +47,12 @@ services:
         - "traefik.enable=true"
         - "traefik.http.routers.${APP_NAME}_nginx.rule=Host(`${APP_NAME}`)"
         - "traefik.http.routers.${APP_NAME}_nginx.entrypoints=web"
-        - "traefik.docker.network=traefik"
+        - "traefik.docker.network=traefik-net"
       depends_on:
         - php
       networks:
         - internal
-        - traefik
+        - traefik-net
       restart: always
 
 
@@ -63,7 +63,7 @@ services:
           - "traefik.enable=true"
           - "traefik.http.routers.${APP_NAME}_phpmyadmin.rule=Host(`${APP_NAME}.phpmyadmin`)"
           - "traefik.http.routers.${APP_NAME}_phpmyadmin.entrypoints=web"
-          - "traefik.docker.network=traefik"
+          - "traefik.docker.network=traefik-net"
         environment:
           PMA_HOST: mysql                    # The hostname of the MySQL container
           PMA_PORT: 3306                     # The port of the MySQL container
@@ -74,7 +74,7 @@ services:
             - mysql
         networks:
           - internal
-          - traefik
+          - traefik-net
         links:
             - mysql
         restart: always
@@ -102,7 +102,7 @@ services:
         - "traefik.enable=true"
         - "traefik.http.routers.${APP_NAME}_pgadmin.rule=Host(`${APP_NAME}.pgadmin`)"
         - "traefik.http.routers.${APP_NAME}_pgadmin.entrypoints=web"
-        - "traefik.docker.network=traefik"
+        - "traefik.docker.network=traefik-net"
       environment:
         PGADMIN_DEFAULT_EMAIL: admin@admin.mk
         PGADMIN_DEFAULT_PASSWORD: test
@@ -110,7 +110,7 @@ services:
         - postgresql
       networks:
         - internal
-        - traefik
+        - traefik-net
 
     postgresql:
       image: postgres:15
@@ -146,7 +146,7 @@ services:
             - "traefik.enable=true"
             - "traefik.http.routers.${APP_NAME}_mailcatcher.rule=Host(`${APP_NAME}_mailcatcher`)"
             - "traefik.http.routers.${APP_NAME}_mailcatcher.entrypoints=web"
-            - "traefik.docker.network=traefik"
+            - "traefik.docker.network=traefik-net"
         ports:
             - "1080:1080"
             - "1025:1025"
